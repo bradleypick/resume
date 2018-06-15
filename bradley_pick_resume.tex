@@ -1,0 +1,198 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}            
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+\definecolor{mygray}{gray}{0.15}
+\definecolor{mypink}{cmyk}{0, 0.7808, 0.4429, 0.1412}
+
+% personal data
+\name{\textcolor{mygray}{Bradley}}{\textcolor{mygray}{Pick}}
+\address{204 - 1045 West 14th Ave, Vancouver, BC, V6H 1P4}{}{}
+\phone[mobile]{778-257-3025}
+\email{bradleypick@gmail.com}           
+\homepage{github.com/bradleypick}                         
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Graduate student in data science completing the final project of a master's degree. Interested in data science, data engineering, machine learning, mathematics, and optimization. Strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2017--Present}{Master of Data Science}{The University of British Columbia}{Vancouver, BC}{}{(In progress)}}
+
+\item{\cventry{2012--2015}{Bachelor of Arts}{The University of British Columbia}{Vancouver, BC}{}{Honours in Mathematics}% Arguments not required can be left empty
+}  % arguments 3 to 6 can be left empty
+
+\item{\cventry{2009--2012}{General Studies}{Thompson Rivers University}{Kamloops, BC}{}{Transfer to UBC}}
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Notable Projects}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{Masters Capstone Project (Ongoing):} '\textit{Read by QxMD Collections Recommendations}'
+
+\vspace{3pt}
+
+\small{This project involves a team of graduate students building a recommendation engine 
+for the \textit{Read} by QxMD application. It involves close collaboration with QxMD identifying 
+their business objectives and discovering how data science can be used to achieve said 
+objectives. Specifically my roles include developing certain sub-modules of the deliverable 
+Python package(s), reading research papers to identify particularly pertinent machine learning models, and maintaining the development environment/Docker containers. 
+Furthermore, the project includes the development of a pipeline that ingests data from 
+a production database and yields recommendations in batches.}}
+
+\vspace{6pt}
+
+\item{\textbf{Extracurricular Project (Ongoing):} '\textit{\href{https://github.com/UBC-CS/lipo-python}{Implementing Global optimization of Lipschitz functions}}'
+
+\vspace{3pt}
+
+\small{This additional project involves the implementation of a global optimization technique 
+called LIPO from the paper 'Global optimization of Lipschitz Functions' by Cédric Malherbe, Nicolas Vayatis. The main goals include replication of the original results and further 
+numerical experimentation. It involves significant exposure to scientific
+computing (in general and specifically in Python) and optimization.}}
+
+\vspace{6pt}
+
+\item{\textbf{DSCI 532 Data Visualization II Final Project:} '\textit{\href{https://github.com/bradleypick/food-expenditure}{Canadian Food Expenditure Shiny App}}'
+
+\vspace{3pt}
+
+\small{This course project involved the development of an R shiny application displaying data 
+collected by Statistics Canada pertaining to household expenditure on food. Particular 
+attention was paid to correct use of the underlying theory of data visualization. This 
+was done with the end goal of ease of use and understanding for the consumer.}}
+
+\vspace{6pt}
+
+\item{\textbf{DSCI 522 - Data Science Workflows Final Project:}'\textit{\href{https://github.com/bradleypick/BC-motor-vehicle-incidents}{BC Motor Vehicle Incident Analysis}}'
+
+\vspace{3pt}
+
+\small{This course project involved the development of a simple analysis of data on motor 
+vehicle incidents in British Columbia. The data source was the Government of BC data catalogue.
+Particular attention was paid to dependency management and reproducibility. 
+Specific tools used include packrat for R package management, Make for simple building, and 
+Docker for containerization.}}
+
+\end{itemize}
+
+\section{Previous Employment}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{2015-2017}{Quality Control Technician/Labourer}{\textsc{Dawson Construction}}{Various Locations in BC}{}{\vspace{3pt}
+As a quality control technician I worked on site to ensure the various elements of 
+the construction project were carried out in accordance with Dawson's Quality Control plan.
+This included density testing, surveying, and the associated documentation.
+}}
+
+\vspace{6pt}
+
+\item{\cventry{2005--2015}{Equipment Operator}{\textsc{Ponderosa Ginseng Farms}}{Kamloops, BC}{}{\vspace{3pt}Operate various forms of light and heavy equipment. Perform strenuous physical labour. 
+}}
+
+\vspace{6pt}
+
+\item{\cventry{2013--2014}{Research Assistant}{\textsc{Vancouver School of Economics}}{Vancouver, BC}{}{\vspace{3pt}Aided in the construction of statistical estimation programs and prepared data for analysis.}}
+
+\end{itemize}
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} \textsc{Python}, \textsc{R}, TeX 
+
+\vspace{6pt}
+
+\item \textbf{Industry Software Skills:} SQL, Linux, Docker, Amazon Web Services (EC2, S3, EMR), and a variety of statistics/ machine learning libraries.
+
+\vspace{6pt}
+
+\item \textbf{General Business Skills:} Very strong written and verbal communication skills. Excellent ability to convey complex ideas clearly to various stakeholders. Commitment to being a valuable team member and helping others thrive in a collaborative environment.
+
+\end{itemize}
+
+\section{Interests and extra-curricular activity}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+
+
+\item{I have a strong interest in mechanical systems and, in particular, motor vehicles. 
+This largely manifests as being the sole maintainer of all vehicles I have ever owned -
+I enjoy pulling wrenches and learning through the disassembly/reassembly of mechanical systems.}
+
+\vspace{6pt}
+
+\item{I am an avid hiker and snowboarder who enjoys spending time outside with my partner 
+and dog (especially in Beautiful British Columbia).}
+
+\end{itemize}
+
+\section{References}
+
+\vspace{6pt}
+ 
+\begin{itemize}
+
+\item{References available on request}
+
+\end{itemize}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications} 
+
+\end{document}
+
